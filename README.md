@@ -52,9 +52,9 @@ Run Swift code within Pharo via the integrated Swift Playground or within Pharo 
 
 Write, compile, run, and inspect output of Swift code via the Swift Playground (accessible via the Tools menu).
 
-![](screenshot1.png)
+![](images/screenshot1.png)
 
-![](screenshot4.png)
+![](images/screenshot4.png)
 
 ##### Important contextual menu items:
 
@@ -78,7 +78,7 @@ Additionally, the contextual menu item, `Inspect AST`, returns the Swift [AST](h
 
 Outside of the Swift Playground, Swift code can be executed within Pharo code by using the `runSwift` string class extension. For example:
 
-![](screenshot3.png)
+![](images/screenshot3.png)
 
 ## API Reference
 
@@ -197,7 +197,7 @@ dispatchMain() // Prevent premature exit
 
 If [LLVM](https://llvm.org) errors are encountered during compilation or while executing, Pharo errors will be thrown. For example:
 
-![](screenshot2.png)
+![](images/screenshot2.png)
 
 ## TODO
 
