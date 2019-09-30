@@ -204,6 +204,7 @@ If [LLVM](https://llvm.org) errors are encountered during compilation or while e
 - [ ] Swift Playground `Print it`
 - [ ] Swift Playground syntax highlighting
 - [ ] Swift response string to Pharo object deserialization
+- [ ] Move documentation to the wiki
 - [ ] Move to Spec2
 
 ## Acknowledgements
