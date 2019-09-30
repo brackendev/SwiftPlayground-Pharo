@@ -21,8 +21,8 @@ Run Swift code within Pharo via the integrated Swift Playground or within Pharo 
   * [Swift Compilation and Output](#swift-compilation-and-output)
   * [Pharo Object to Swift String Serialization](#pharo-object-to-swift-string-serialization)
   * [Swift Response String to Pharo Object Deserialization](#swift-response-string-to-pharo-object-deserialization)
+  * [Imports](#imports)
   * [Asynchronous Swift Code](#asynchronous-swift-code)
-  * [Error Handling](#error-handling)
 * [TODO](#todo)
 * [Acknowledgements](#acknowledgements)
 * [Author](#author)
@@ -165,6 +165,10 @@ Currently only handles one depth of booleans, numbers, and strings.
 
 **(TODO)**
 
+### Imports
+
+[Foundation](https://developer.apple.com/documentation/foundation) is imported automatically. For other frameworks, import as needed.
+
 ### Asynchronous Swift Code
 
 To prevent asynchronous Swift code from exiting too early, use [dispatchMain()](https://developer.apple.com/documentation/dispatch/1452860-dispatchmain) to never return and use [exit(0)](https://developer.apple.com/documentation/foundation/thread/1409404-exit) to exit when the program should be complete.
@@ -192,12 +196,6 @@ task.resume()
 session.finishTasksAndInvalidate() // Start the network request session
 dispatchMain() // Prevent premature exit
 ```
-
-### Error Handling
-
-If [LLVM](https://llvm.org) errors are encountered then Pharo errors will be thrown. For example:
-
-![](images/screenshot2.png)
 
 ## TODO
 
