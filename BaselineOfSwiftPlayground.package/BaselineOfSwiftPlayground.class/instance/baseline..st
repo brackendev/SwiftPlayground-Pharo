@@ -6,6 +6,8 @@ baseline: spec
 		do:
 			[ self setUpDependencies: spec.
 			spec
+				package: 'SwiftPlayground'.
+			spec
 				package: 'SwiftPlayground-Core'
 				with: [ spec requires: #('OSSubprocess') ].
 			spec
