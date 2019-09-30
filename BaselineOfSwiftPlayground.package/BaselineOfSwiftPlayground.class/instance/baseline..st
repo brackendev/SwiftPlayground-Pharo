@@ -4,9 +4,8 @@ baseline: spec
 	spec
 		for: #common
 		do:
-			[ self
-				setupDependencies: spec.
-				spec
+			[ self setupDependencies: spec.
+			spec
 				package: 'SwiftPlayground-Core'
 				with: [ spec requires: #('OSSubprocess') ].
 			spec
@@ -14,8 +13,5 @@ baseline: spec
 				with: [ spec requires: #('SwiftPlayground-Core') ].
 			spec
 				package: 'SwiftPlayground-Extensions'
-				with: [ spec requires: #('SwiftPlayground-Core') ].
-			spec
-				package: 'SwiftPlayground-Extensions-Tests'
-				with: [ spec requires: #('SwiftPlayground-Extensions') ]
-			]
+				with: [ spec requires: #('SwiftPlayground-Core') ]
+				]
