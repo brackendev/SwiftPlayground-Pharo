@@ -17,8 +17,6 @@ Run Swift code within Pharo via the integrated Swift Playground or within Pharo 
 
 * [Installation](#installation)
 * [Usage](#usage)
-  * [Swift Playground](#swift-playground)
-  * [Inline Swift](#inline-swift)
 * [API Reference](#api-reference)
   * [Swift Compilation and Output](#swift-compilation-and-output)
   * [Pharo Object to Swift String Serialization](#pharo-object-to-swift-string-serialization)
@@ -86,7 +84,7 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 ### Swift Compilation and Output
 
-#### 🔹 String class extension: `runSwift`
+#### ▪️ String class extension: `runSwift`
 
 The output is a string reponse returned from the Swift code by using [print](https://developer.apple.com/documentation/swift/1541053-print). For example:
 	
@@ -131,7 +129,7 @@ swiftCode runSwift.
 
 The following extension methods have been implemented (with examples). The examples are also availabe via the `SPExamples` object.
 
-#### 🔹 Array class extension: `asSwiftArray`
+#### ▪️ Array class extension: `asSwiftArray`
 
 Currently only handles one depth of booleans, numbers, and strings.
 
@@ -140,14 +138,14 @@ Currently only handles one depth of booleans, numbers, and strings.
 "Returns '[1,"A",2,true,3,false]'"
 ```
 
-#### 🔹 Boolean class extension: `asSwiftBoolean`
+#### ▪️ Boolean class extension: `asSwiftBoolean`
 
 ```smalltalk
 true asSwiftBoolean.
 "Returns 'true'"
 ```
 
-#### 🔹 Dictionary class extension: `asSwiftDictionary`
+#### ▪️ Dictionary class extension: `asSwiftDictionary`
 
 Currently only handles one depth of booleans, numbers, and strings.
 
@@ -156,7 +154,7 @@ Currently only handles one depth of booleans, numbers, and strings.
 "Returns '[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'"
 ```
 
-#### 🔹 String class extension: `asSwiftString`
+#### ▪️ String class extension: `asSwiftString`
 
 ```smalltalk
 'Hello, World!' asSwiftString.
