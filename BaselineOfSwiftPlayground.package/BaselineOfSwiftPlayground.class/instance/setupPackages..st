@@ -1,9 +1,10 @@
 baselines
 setupPackages: spec
-	spec
+	^ spec
 		baseline: 'SwiftPlayground'
 		with:
-			[ spec
+			[
+			 spec
 				package: 'SwiftPlayground-Core'
 				with: [ spec requires: #('OSSubprocess') ].
 			spec
@@ -15,4 +16,4 @@ setupPackages: spec
 			spec
 				package: 'SwiftPlayground-Extensions-Tests'
 				with: [ spec requires: #('SwiftPlayground-Extensions') ]
-			]
+			]; yourself
