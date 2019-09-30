@@ -1,4 +1,4 @@
-Due to frustrations with Xcode's Swift Playgrounds, this robust Swift code runner was implemented for Pharo. It also has added benefits of working with Swift output in the powerful Pharo environment and accessing Swift ASTs.
+Due to frustrations with Xcode's Swift Playgrounds, this robust Swift code runner was implemented for Pharo. It also has the added benefits of working with Swift output in the powerful Pharo environment and accessing Swift ASTs.
 
 - - -
 
