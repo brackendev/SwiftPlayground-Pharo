@@ -160,7 +160,7 @@ Currently only handles one depth of booleans, numbers, and strings.
 
 ```smalltalk
 'Hello, World!' asSwiftString.
-"Returns '"Hello, World!"'."
+"Returns '"Hello, World!"'"
 ```
 
 ### Swift Response String to Pharo Object Deserialization
