@@ -3,7 +3,7 @@ Due to the fragility of Xcode's Swift Playgrounds, my Pharo implementation has r
 - - -
 
 SwiftPlayground-Pharo
-=====================
+===
 
 **Interact with Swift on Pharo.**
 
@@ -17,6 +17,8 @@ Run Swift code within Pharo via the integrated Swift Playground or within Pharo 
 
 * [Installation](#installation)
 * [Usage](#usage)
+  * [Swift Playground](#swift-playground)
+  * [Inline Swift](#inline-swift)
 * [API Reference](#api-reference)
   * [Swift Compilation and Output](#swift-compilation-and-output)
   * [Pharo Object to Swift String Serialization](#pharo-object-to-swift-string-serialization)
@@ -48,7 +50,7 @@ Run Swift code within Pharo via the integrated Swift Playground or within Pharo 
 
 ## Usage
 
-#### 🔹 Use Swift from the Swift Playground
+#### 🔹 Swift Playground
 
 Write, compile, run, and inspect output of Swift code via the Swift Playground (accessible via the Tools menu).
 
@@ -74,7 +76,7 @@ Additionally, the contextual menu item, `Inspect AST`, returns the Swift [AST](h
           (string_literal_expr type='<null>' encoding=utf8 value="Hello, World!" builtin_initializer=**NULL** initializer=**NULL**)))))
 ```
 
-#### 🔹 Use Swift within Pharo Smalltalk
+#### 🔹 Inline Swift
 
 Outside of the Swift Playground, Swift code can be executed within Pharo code by using the `runSwift` string class extension. For example:
 
