@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "brackendev 9/6/2019 13:06",
+	"super" : "Object",
+	"category" : "SwiftPlayground-Core-SwiftPlayground-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"icons"
+	],
+	"instvars" : [ ],
+	"name" : "SPResources",
+	"type" : "normal"
+}
