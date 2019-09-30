@@ -4,5 +4,5 @@ setUpDependencies: spec
 		baseline: 'OSSubprocess'
 		with:
 			[ spec
-				repository: 'github://pharo-contributions/OSSubprocess:master/repository'
+				repository: 'github://pharo-contributions/OSSubprocess:v1.1/repository'
 			]
