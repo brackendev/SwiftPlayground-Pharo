@@ -87,12 +87,6 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 #### 🔹 String class extension: `runSwift`
 
 The output is a string reponse returned from the Swift code by using [print](https://developer.apple.com/documentation/swift/1541053-print). For example:
-
-```smalltalk
-swiftArray := #(1 2 3 4 5) asSwiftArray.
-(swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
-"Returns '55'"
-```
 	
 ```smalltalk
 swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
@@ -106,6 +100,12 @@ Tip: Simple code does not require [print](https://developer.apple.com/documentat
 ```smalltalk
 'Array("ABCDE")' runSwift.
 "Returns '["A", "B", "C", "D", "E"]'"
+```
+
+```smalltalk
+swiftArray := #(1 2 3 4 5) asSwiftArray.
+(swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
+"Returns '55'"
 ```
 
 ### Pharo Object to Swift String Serialization
