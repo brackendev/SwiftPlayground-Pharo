@@ -62,7 +62,7 @@ Write, compile, run, and inspect output of Swift code via the Swift Playground (
 * `Inspect it` – Compile and run the selected Swift code, inspect it
 * `Print it` – Compile and run the selected Swift code, print it (**TODO**)
 
-Additionally, the contextual menu item, `Inspect AST`, is available to return the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for the selected Swift code. For example, `print("Hello, World!")` returns:
+Additionally, the contextual menu item, `Inspect AST`, returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for the selected Swift code. For example, `print("Hello, World!")` returns:
 
 ```
 (import_decl range=[Swift:1:1 - line:1:8] 'Foundation')
@@ -89,12 +89,15 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 The output is a string reponse. For example:
 
 ```smalltalk
-swiftArray := #(1 2 3 4 5) asSwiftArray.(swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
+swiftArray := #(1 2 3 4 5) asSwiftArray.
+(swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
 "Returns '55'"
 ```
 	
 ```smalltalk
-swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.('let (lowercased, alphabet) = (Set(', swiftString, '), "abcdefghijklmnopqrstuvwxyz")print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
+swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
+('let (lowercased, alphabet) = (Set(', swiftString, '), "abcdefghijklmnopqrstuvwxyz")
+print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 "Returns 'true'"
 ```
 
@@ -112,7 +115,16 @@ Pharo class extension methods are available to use as quick helpers to serialize
 For example, in the code below, notice the usage of `sentence`, `asSwiftString`, and the `swiftCode` string concatenation:
 
 ```smalltalk
-sentence := 'The five boxing wizards jump quickly' asLowercase asSwiftString.swiftCode := ('// Swift code to determine a pangramlet (sentenceSet, alphabet) = (Set(', sentence, '), "abcdefghijklmnopqrstuvwxyz")print(!alphabet.contains {  !sentenceSet.contains($0)})').swiftCode runSwift."Returns 'true'"
+sentence := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
+swiftCode := ('
+// Swift code to determine a pangram
+let (sentenceSet, alphabet) = (Set(', sentence, '), "abcdefghijklmnopqrstuvwxyz")
+print(!alphabet.contains {
+  !sentenceSet.contains($0)
+})
+').
+swiftCode runSwift.
+"Returns 'true'"
 ```
 
 The following extension methods have been implemented (with examples). These examples are also availabe via the `SPExamples` object.
@@ -160,7 +172,25 @@ To prevent asynchronous Swift code from exiting too early, use [dispatchMain()](
 For example, in the Swift code below, a [URLRequest](https://developer.apple.com/documentation/foundation/urlrequest) network request session is started and then followed by `dispatchMain()` so the program does not prematurely exit. In the session response closure `exit(0)` will be called to exit the program.
 
 ```swift
-let sessionConfig = URLSessionConfiguration.defaultlet session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)var url = URL(string: "https://www.gravatar.com/4f64c9f81bb0d4ee969aaf7b4a5a6f40.json")var request = URLRequest(url: url!)request.httpMethod = "GET"let task = session.dataTask(with: request, completionHandler: { data, response, error in    if let uError = error {        print(uError.localizedDescription) // Returns error string    } else if let uData = data, let string = String(data: uData, encoding: String.Encoding.utf8) {        print(string) // Returns response string    }    exit(0) // Exit after asynchronous work is complete})task.resume()session.finishTasksAndInvalidate() // Start the network request sessiondispatchMain() // Prevent premature exit
+let sessionConfig = URLSessionConfiguration.default
+let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+
+var url = URL(string: "https://www.gravatar.com/4f64c9f81bb0d4ee969aaf7b4a5a6f40.json")
+var request = URLRequest(url: url!)
+request.httpMethod = "GET"
+
+let task = session.dataTask(with: request, completionHandler: { data, response, error in
+    if let uError = error {
+        print(uError.localizedDescription) // Returns error string
+    } else if let uData = data, let string = String(data: uData, encoding: String.Encoding.utf8) {
+        print(string) // Returns response string
+    }
+    exit(0) // Exit after asynchronous work is complete
+})
+task.resume()
+
+session.finishTasksAndInvalidate() // Start the network request session
+dispatchMain() // Prevent premature exit
 ```
 
 ### Error Handling
