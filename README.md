@@ -86,7 +86,7 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 #### 🔹 String class extension: `runSwift`
 
-The output is a string reponse. For example:
+The output is a string reponse returned from the Swift code by using [print](https://developer.apple.com/documentation/swift/1541053-print). For example:
 
 ```smalltalk
 swiftArray := #(1 2 3 4 5) asSwiftArray.
@@ -101,7 +101,7 @@ print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 "Returns 'true'"
 ```
 
-Tip: One lines do not require [print](https://developer.apple.com/documentation/swift/1541053-print). For example:
+Tip: Simple code does not require [print](https://developer.apple.com/documentation/swift/1541053-print). For example:
 
 ```smalltalk
 'Array("ABCDE")' runSwift.
