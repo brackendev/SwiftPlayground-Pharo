@@ -110,9 +110,9 @@ Tip: One lines do not require [print](https://developer.apple.com/documentation/
 
 ### Pharo Object to Swift String Serialization
 
-Pharo class extension methods are available to use as quick helpers to serialize Pharo objects to Swift psuedo-objects (string representations of Swift objects). For example: `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
+Pharo class extension methods are available to use as quick helpers to serialize Pharo objects to Swift psuedo-objects (string representations of Swift objects). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
 
-For example, in the code below, notice the usage of `sentence`, `asSwiftString`, and the `swiftCode` string concatenation:
+In the code below, notice the usage of `sentence`, `asSwiftString`, and the `swiftCode` string concatenation:
 
 ```smalltalk
 sentence := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
