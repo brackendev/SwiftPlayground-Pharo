@@ -1,3 +1,0 @@
-accessing
-contentTextModel
-	^ contentTextModel

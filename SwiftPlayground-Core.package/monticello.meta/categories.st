@@ -1,1 +1,0 @@
-SystemOrganization addCategory: #'SwiftPlayground-Core'!

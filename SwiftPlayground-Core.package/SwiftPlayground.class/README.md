@@ -1,1 +1,0 @@
-I am SwiftPlayground, the main object of SwiftPlayground.
