@@ -1,1 +1,0 @@
-I am SPContentTextModel, the model object for PSContentTextMorph.
