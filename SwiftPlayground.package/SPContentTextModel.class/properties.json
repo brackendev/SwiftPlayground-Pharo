@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "brackendev 9/6/2019 13:06",
+	"super" : "RubScrolledTextModel",
+	"category" : "SwiftPlayground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"owner"
+	],
+	"name" : "SPContentTextModel",
+	"type" : "normal"
+}

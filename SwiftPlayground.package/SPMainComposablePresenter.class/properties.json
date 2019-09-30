@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "brackendev 9/6/2019 13:07",
+	"super" : "ComposablePresenterWithModel",
+	"category" : "SwiftPlayground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"contentTextPresenter",
+		"contentTextModel",
+		"contentTextMorph",
+		"contentTextAdapter"
+	],
+	"name" : "SPMainComposablePresenter",
+	"type" : "normal"
+}

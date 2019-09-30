@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "brackendev 9/6/2019 13:06",
+	"super" : "Object",
+	"category" : "SwiftPlayground",
+	"classinstvars" : [
+		"shared"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SwiftPlayground",
+	"type" : "normal"
+}

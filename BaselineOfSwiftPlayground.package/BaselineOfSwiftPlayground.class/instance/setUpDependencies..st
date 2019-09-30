@@ -1,5 +1,5 @@
 baselines
-setUpDependencies: spec
+setupDependencies: spec
 	spec
 		baseline: 'OSSubprocess'
 		with:

@@ -1,0 +1,3 @@
+accessing
+contentTextPresenter
+	^ contentTextPresenter
