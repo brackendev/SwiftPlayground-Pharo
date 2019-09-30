@@ -1,0 +1,4 @@
+examples
+exampleOpenPlayground
+	<sampleInstance>
+	SwiftPlayground openPlayground

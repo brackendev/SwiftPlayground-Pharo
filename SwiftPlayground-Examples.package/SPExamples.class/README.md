@@ -1,0 +1,1 @@
+I am SPExamples, an object to show examples for SwiftPlayground extensions.
