@@ -1,4 +1,4 @@
-Due to the fragility of Xcode's Swift Playgrounds, this Pharo implementation has increased stability with the added benefits of working with Swift output in the powerful Pharo environment and accessing Swift ASTs.
+Due to the fragility of Xcode's Swift Playgrounds, this Pharo implementation is a robust Swift code runner with the added benefits of working with Swift output in the powerful Pharo environment and accessing Swift ASTs.
 
 - - -
 
