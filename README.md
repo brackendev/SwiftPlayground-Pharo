@@ -195,7 +195,7 @@ dispatchMain() // Prevent premature exit
 
 ### Error Handling
 
-If [LLVM](https://llvm.org) errors are encountered during compilation or while executing, Pharo errors will be thrown. For example:
+If [LLVM](https://llvm.org) errors are encountered then Pharo errors will be thrown. For example:
 
 ![](images/screenshot2.png)
 
