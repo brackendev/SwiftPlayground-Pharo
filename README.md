@@ -7,7 +7,7 @@ SwiftPlayground-Pharo
 
 **Interact with Swift on Pharo.**
 
-Run Swift code within Pharo via the integrated Swift Playground or interoperate with Pharo Smalltalk code, inspect output and Swift ASTs.
+Run Swift code within Pharo via the integrated Swift Playground, interoperate with Pharo Smalltalk code, inspect output and Swift ASTs.
 
 * [Pharo 7.0](https://www.pharo.org/) reference platform.
 * Requires macOS 10.14.5 (or later) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit).
