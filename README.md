@@ -50,7 +50,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
 ## Usage
 
-#### 🔹 Swift Playground
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Swift Playground
 
 Write, compile, run, and inspect output of Swift code via the Swift Playground (accessible via the Tools menu).
 
@@ -76,7 +76,7 @@ Additionally, the contextual menu item, `Inspect AST`, returns the Swift [AST](h
           (string_literal_expr type='<null>' encoding=utf8 value="Hello, World!" builtin_initializer=**NULL** initializer=**NULL**)))))
 ```
 
-#### 🔹 Inline Swift
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Inline Swift
 
 Outside of the Swift Playground, Swift code can be executed within Pharo code by using the `runSwift` string class extension. For example:
 
@@ -86,9 +86,11 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 ### Swift Compilation and Output
 
-#### ▪️ String class extension: `runSwift`
+Pharo class extension methods can be used to compile, run, and view the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code.
 
-Returns a string representation of a Swift object from a Pharo string of Swift code. Use Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function within the Swift code for output to Pharo. For example:
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `runSwift`
+
+Returns a string representation of a Swift object from Swift code. Use Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function within the Swift code for output to Pharo. For example:
 	
 ```smalltalk
 swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
@@ -97,7 +99,7 @@ print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 "Returns 'true'"
 ```
 
-Tip: Simple code does not require Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
+Tip: Simple Swift code does not require Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
 
 ```smalltalk
 'Array("ABCDE")' runSwift.
@@ -110,9 +112,9 @@ swiftArray := #(1 2 3 4 5) asSwiftArray.
 "Returns '55'"
 ```
 
-#### ▪️ String class extension: `swiftAST`
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `swiftAST`
 
-Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from a Pharo string of Swift code.
+Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from Swift code.
 
 ### Pharo Object to Swift String Serialization
 
@@ -135,7 +137,7 @@ swiftCode runSwift.
 
 The following extension methods have been implemented (with examples). The examples are also availabe via the `SPExamples` object.
 
-#### ▪️ Array class extension: `asSwiftArray`
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Array class extension: `asSwiftArray`
 
 Returns a string representation of a Swift object from a Pharo array. Currently only handles one depth of booleans, numbers, and strings.
 
@@ -144,7 +146,7 @@ Returns a string representation of a Swift object from a Pharo array. Currently 
 "Returns '[1,"A",2,true,3,false]'"
 ```
 
-#### ▪️ Boolean class extension: `asSwiftBoolean`
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Boolean class extension: `asSwiftBoolean`
 
 Returns a string representation of a Swift object from a Pharo boolean.
 
@@ -153,7 +155,7 @@ true asSwiftBoolean.
 "Returns 'true'"
 ```
 
-#### ▪️ Dictionary class extension: `asSwiftDictionary`
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Dictionary class extension: `asSwiftDictionary`
 
 Returns a string representation of a Swift object from a Pharo dictionary. Currently only handles one depth of booleans, numbers, and strings.
 
@@ -162,7 +164,7 @@ Returns a string representation of a Swift object from a Pharo dictionary. Curre
 "Returns '[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'"
 ```
 
-#### ▪️ String class extension: `asSwiftString`
+#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `asSwiftString`
 
 Returns a string representation of a Swift object from a Pharo string.
 
