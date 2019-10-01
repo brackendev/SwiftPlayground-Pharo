@@ -20,7 +20,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 * [Installation](#installation)
 * [Usage](#usage)
 * [API Reference](#api-reference)
-  * [Swift Compilation and Output](#swift-output-and-asts)
+  * [Swift Output and ASTs](#swift-output-and-asts)
   * [Pharo Object to Swift String Serialization](#pharo-object-to-swift-string-serialization)
   * [Swift Response String to Pharo Object Deserialization](#swift-response-string-to-pharo-object-deserialization)
   * [Imports](#imports)
