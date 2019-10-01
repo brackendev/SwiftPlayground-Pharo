@@ -20,7 +20,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 * [Installation](#installation)
 * [Usage](#usage)
 * [API Reference](#api-reference)
-  * [Swift Compilation and Output](#swift-compilation-and-output)
+  * [Swift Compilation and Output](#swift-output-and-asts)
   * [Pharo Object to Swift String Serialization](#pharo-object-to-swift-string-serialization)
   * [Swift Response String to Pharo Object Deserialization](#swift-response-string-to-pharo-object-deserialization)
   * [Imports](#imports)
@@ -84,7 +84,7 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 ## API Reference
 
-### Swift Compilation and Output
+### Swift Output and ASTs
 
 Pharo class extension methods can be used to compile, run, and view the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code.
 
