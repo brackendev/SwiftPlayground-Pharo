@@ -7,7 +7,7 @@ SwiftPlayground-Pharo
 
 **Interact with Swift on Pharo.**
 
-Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect output and Swift ASTs.
+Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect output and Swift [ASTs](https://en.wikipedia.org/wiki/Abstract_syntax_tree).
 
 * [Pharo 7.0](https://www.pharo.org/) reference platform.
 * Requires macOS 10.14.5 (or later) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit).
@@ -88,7 +88,7 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 #### ▪️ String class extension: `runSwift`
 
-Returns a string representation of a Swift object from a Pharo string of Swift code. Use [print](https://developer.apple.com/documentation/swift/1541053-print) within Swift for output. For example:
+Returns a string representation of a Swift object from a Pharo string of Swift code. Use [print](https://developer.apple.com/documentation/swift/1541053-print) within the Swift code for output to Pharo. For example:
 	
 ```smalltalk
 swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
@@ -109,6 +109,10 @@ swiftArray := #(1 2 3 4 5) asSwiftArray.
 (swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
 "Returns '55'"
 ```
+
+#### ▪️ String class extension: `swiftAST`
+
+Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from a Pharo string of Swift code.
 
 ### Pharo Object to Swift String Serialization
 
