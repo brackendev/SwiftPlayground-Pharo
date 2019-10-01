@@ -183,7 +183,7 @@ The Apple [Foundation](https://developer.apple.com/documentation/foundation) fra
 
 ### Asynchronous Swift Code
 
-To prevent asynchronous Swift code from exiting too early, use [dispatchMain()](https://developer.apple.com/documentation/dispatch/1452860-dispatchmain) to never return and use [exit(0)](https://developer.apple.com/documentation/foundation/thread/1409404-exit) to exit when the program should be complete.
+To prevent asynchronous Swift code from exiting too early, use the Swift [dispatchMain()](https://developer.apple.com/documentation/dispatch/1452860-dispatchmain) function to never return and use the Swift [exit()](https://developer.apple.com/documentation/foundation/thread/1409404-exit) function to exit when the program should be complete.
 
 For example, in the Swift code below, a [URLRequest](https://developer.apple.com/documentation/foundation/urlrequest) network request session is started and then followed by `dispatchMain()` so the program does not prematurely exit. In the session response closure `exit(0)` will be called to exit the program.
 
