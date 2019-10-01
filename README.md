@@ -88,7 +88,7 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 #### ▪️ String class extension: `runSwift`
 
-The output is a string reponse returned from the Swift code by using [print](https://developer.apple.com/documentation/swift/1541053-print). For example:
+Returns a string representation of a Swift object from a Pharo string of Swift code. Use [print](https://developer.apple.com/documentation/swift/1541053-print) within Swift for output. For example:
 	
 ```smalltalk
 swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
@@ -133,7 +133,7 @@ The following extension methods have been implemented (with examples). The examp
 
 #### ▪️ Array class extension: `asSwiftArray`
 
-Currently only handles one depth of booleans, numbers, and strings.
+Returns a string representation of a Swift object from a Pharo array. Currently only handles one depth of booleans, numbers, and strings.
 
 ```smalltalk
 #(1 'A' 2 true 3 false) asSwiftArray.
@@ -142,6 +142,8 @@ Currently only handles one depth of booleans, numbers, and strings.
 
 #### ▪️ Boolean class extension: `asSwiftBoolean`
 
+Returns a string representation of a Swift object from a Pharo boolean.
+
 ```smalltalk
 true asSwiftBoolean.
 "Returns 'true'"
@@ -149,7 +151,7 @@ true asSwiftBoolean.
 
 #### ▪️ Dictionary class extension: `asSwiftDictionary`
 
-Currently only handles one depth of booleans, numbers, and strings.
+Returns a string representation of a Swift object from a Pharo dictionary. Currently only handles one depth of booleans, numbers, and strings.
 
 ```smalltalk
 (Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true). (false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.
@@ -157,6 +159,8 @@ Currently only handles one depth of booleans, numbers, and strings.
 ```
 
 #### ▪️ String class extension: `asSwiftString`
+
+Returns a string representation of a Swift object from a Pharo string.
 
 ```smalltalk
 'Hello, World!' asSwiftString.
