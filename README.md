@@ -88,7 +88,7 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 #### ▪️ String class extension: `runSwift`
 
-Returns a string representation of a Swift object from a Pharo string of Swift code. Use [print](https://developer.apple.com/documentation/swift/1541053-print) within the Swift code for output to Pharo. For example:
+Returns a string representation of a Swift object from a Pharo string of Swift code. Use Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function within the Swift code for output to Pharo. For example:
 	
 ```smalltalk
 swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
@@ -97,7 +97,7 @@ print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 "Returns 'true'"
 ```
 
-Tip: Simple code does not require [print](https://developer.apple.com/documentation/swift/1541053-print). For example:
+Tip: Simple code does not require Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
 
 ```smalltalk
 'Array("ABCDE")' runSwift.
@@ -177,7 +177,7 @@ Returns a string representation of a Swift object from a Pharo string.
 
 ### Imports
 
-[Foundation](https://developer.apple.com/documentation/foundation) is imported automatically. For other frameworks, import as needed.
+The Apple [Foundation](https://developer.apple.com/documentation/foundation) framework is imported into Swift code automatically. To use other Apple frameworks with Swift code, use the Swift `import` directive as needed.
 
 ### Asynchronous Swift Code
 
