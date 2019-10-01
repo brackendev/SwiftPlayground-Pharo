@@ -114,7 +114,7 @@ swiftArray := #(1 2 3 4 5) asSwiftArray.
 
 #### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `swiftAST`
 
-Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) from Swift code.
+Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code.
 
 ### Pharo Object to Swift String Serialization
 
