@@ -119,7 +119,7 @@ In the code below, notice the usage of `sentence`, `asSwiftString`, and the `swi
 ```smalltalk
 sentence := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
 swiftCode := ('
-// Swift code to determine a pangram
+// Determine a pangram
 let (sentenceSet, alphabet) = (Set(', sentence, '), "abcdefghijklmnopqrstuvwxyz")
 print(!alphabet.contains {
   !sentenceSet.contains($0)
