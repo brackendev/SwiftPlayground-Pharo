@@ -139,7 +139,7 @@ The following extension methods have been implemented (with examples). The examp
 
 #### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Array class extension: `asSwiftArray`
 
-Returns a string representation of a Swift object from a Pharo array. Currently only handles one depth of booleans, numbers, and strings.
+Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
 ```smalltalk
 #(1 'A' 2 true 3 false) asSwiftArray.
@@ -148,7 +148,7 @@ Returns a string representation of a Swift object from a Pharo array. Currently 
 
 #### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Boolean class extension: `asSwiftBoolean`
 
-Returns a string representation of a Swift object from a Pharo boolean.
+Returns a string representation of a Swift object.
 
 ```smalltalk
 true asSwiftBoolean.
@@ -157,7 +157,7 @@ true asSwiftBoolean.
 
 #### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Dictionary class extension: `asSwiftDictionary`
 
-Returns a string representation of a Swift object from a Pharo dictionary. Currently only handles one depth of booleans, numbers, and strings.
+Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
 ```smalltalk
 (Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true). (false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.
@@ -166,7 +166,7 @@ Returns a string representation of a Swift object from a Pharo dictionary. Curre
 
 #### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `asSwiftString`
 
-Returns a string representation of a Swift object from a Pharo string.
+Returns a string representation of a Swift object.
 
 ```smalltalk
 'Hello, World!' asSwiftString.
