@@ -2,7 +2,7 @@
 
 <p style="text-align: center;"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Now I get why Apple requires students to submit a playground that can be experienced in at most 3 minutes to apply for a WWDC scholarship…<br><br>The reviewers have to spend the remaining 57 minutes trying to get Xcode to run it successfully 🤦</p>&mdash; Patrick Balestra (@BalestraPatrick) <a href="https://twitter.com/BalestraPatrick/status/1109932828970700802?ref_src=twsrc%5Etfw">March 24, 2019</a></blockquote></p>
 
-Because of Xcode Swift Playground [instability](https://twitter.com/search?q=xcode%20playground%20crash&f=live) while running even the [simplest](https://twitter.com/bioalex/status/1177368049873301506) of Swift code, this Swift code runner was implemented with Pharo. It brings the benefits of greatly increased stability for trying new short pieces of code _and_  working with Swift output in the powerful Pharo environment. This is a work in progress.
+Because of Xcode Swift Playground [instability](https://twitter.com/search?q=xcode%20playground%20crash&f=live) while running even the [simplest](https://twitter.com/bioalex/status/1177368049873301506) of Swift code, this Swift code runner was implemented with Pharo. It brings the benefits of greatly increased stability for trying short pieces of code _and_  working with Swift output in the powerful Pharo environment. This is a work in progress.
 
 - - -
 
