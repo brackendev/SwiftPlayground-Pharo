@@ -216,8 +216,9 @@ dispatchMain() // Prevent premature exit
 ## TODO
 
 - [ ] Swift Playground `Print it`
-- [ ] Swift Playground syntax highlighting
 - [ ] Swift response string to Pharo object deserialization
+- [ ] Swift Playground syntax highlighting and code completion
+- [ ] Swift Playground open/save files
 - [ ] Move documentation to the wiki
 - [ ] Move to Spec2
 
