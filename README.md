@@ -1,4 +1,10 @@
-Because of the Xcode Swift Playground instability while running even the simplest of Swift code, this robust Swift code runner was implemented with Pharo. It brings the benefits of working with Swift output in the powerful Pharo environment. This is a work in progress.
+<p style="text-align: center;"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Never ever praise an Xcode playground. It’s bound to crash 10 seconds later. <a href="https://twitter.com/hashtag/Swift?src=hash&amp;ref_src=twsrc%5Etfw">#Swift</a> <a href="https://twitter.com/hashtag/xcode?src=hash&amp;ref_src=twsrc%5Etfw">#xcode</a> <a href="https://twitter.com/hashtag/ios?src=hash&amp;ref_src=twsrc%5Etfw">#ios</a></p>&mdash; YOAD (@YOADAPPS) <a href="https://twitter.com/YOADAPPS/status/1075868207641231360?ref_src=twsrc%5Etfw">December 20, 2018</a></blockquote></p>
+
+<p style="text-align: center;"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Now I get why Apple requires students to submit a playground that can be experienced in at most 3 minutes to apply for a WWDC scholarship…<br><br>The reviewers have to spend the remaining 57 minutes trying to get Xcode to run it successfully 🤦</p>&mdash; Patrick Balestra (@BalestraPatrick) <a href="https://twitter.com/BalestraPatrick/status/1109932828970700802?ref_src=twsrc%5Etfw">March 24, 2019</a></blockquote></p>
+
+- - -
+
+Because of Xcode Swift Playground [instability](https://twitter.com/search?q=xcode%20playground%20crash&f=live) while running even the simplest of Swift code, this robust Swift code runner was implemented with Pharo. It brings the benefits of working with Swift output in the powerful Pharo environment. This is a work in progress.
 
 - - -
 
