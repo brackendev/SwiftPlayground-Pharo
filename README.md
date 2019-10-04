@@ -189,7 +189,7 @@ The Apple [Foundation](https://developer.apple.com/documentation/foundation) fra
 
 To prevent asynchronous Swift code from exiting too early, use the Swift [dispatchMain()](https://developer.apple.com/documentation/dispatch/1452860-dispatchmain) function to never return and use the Swift [exit()](https://developer.apple.com/documentation/foundation/thread/1409404-exit) function to exit where appropriate.
 
-For example, in the Swift code below, a Swift [URLRequest](https://developer.apple.com/documentation/foundation/urlrequest) network request session is started and then followed by `dispatchMain()` so the program does not prematurely exit. In the session response closure `exit(0)` is then called to exit the program.
+For example, in the Swift code below, a Swift [URLRequest](https://developer.apple.com/documentation/foundation/urlrequest) network request session is started and `dispatchMain()` is called so the program does not prematurely exit. In the session response closure, `exit(0)` is then called to exit the program.
 
 ```swift
 let sessionConfig = URLSessionConfiguration.default
@@ -209,7 +209,7 @@ let task = session.dataTask(with: request, completionHandler: { data, response, 
 })
 task.resume()
 
-session.finishTasksAndInvalidate() // Start the network request session
+session.finishTasksAndInvalidate()
 dispatchMain() // Prevent premature exit
 ```
 
