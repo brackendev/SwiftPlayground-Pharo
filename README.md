@@ -219,7 +219,7 @@ dispatchMain() // Prevent premature exit
 - [ ] Swift Playground open/save files
 - [ ] Swift response string to Pharo object deserialization
 - [ ] Move documentation to the wiki
-- [ ] Move to Spec2
+- [ ] Move to [Spec2](https://astares.blogspot.com/2019/08/spec2.html)
 
 ## Acknowledgements
 
