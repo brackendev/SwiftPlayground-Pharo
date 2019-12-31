@@ -15,7 +15,6 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
 * [Pharo 7.0](https://www.pharo.org/) reference platform.
 * Requires macOS 10.14.5 (or later) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit).
-  * SeasideSwift should run on Windows with little to no modifications but has not been tested yet. See [Running Pharo in Windows Subsystem for Linux (WSL)](https://fuhrmanator.github.io/2019/02/27/Pharo-in-WSL.html) and [Swift for Windows](https://swiftforwindows.github.io).
   
 ![](images/screenshot2.png)
 
@@ -54,7 +53,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
 ## Usage
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Swift Playground
+### SWIFT PLAYGROUND
 
 Write, compile, run, and inspect output of Swift code via the Swift Playground (accessible via the Tools menu).
 
@@ -80,7 +79,7 @@ Additionally, the contextual menu item, `Inspect AST`, returns the Swift [AST](h
           (string_literal_expr type='<null>' encoding=utf8 value="Hello, World!" builtin_initializer=**NULL** initializer=**NULL**)))))
 ```
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Inline Swift
+### INLINE SWIFT
 
 Outside of the Swift Playground, Swift code can be executed within Pharo code by using the `runSwift` string class extension. For example:
 
@@ -88,11 +87,11 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 ## API Reference
 
-### Swift Output and ASTs
+### SWIFT OUTPUT AND ABSTRACT SYNTAX TREES
 
 Pharo class extension methods can be used to compile, run, and view the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code.
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `runSwift`
+#### ◼︎ String class extension: `runSwift`
 
 Returns a string representation of a Swift object from Swift code. Use Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function within the Swift code for output to Pharo. For example:
 	
@@ -116,7 +115,7 @@ swiftArray := #(1 2 3 4 5) asSwiftArray.
 "Returns '55'"
 ```
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `swiftAST`
+#### ◼︎ String class extension: `swiftAST`
 
 Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code.
 
@@ -141,7 +140,7 @@ swiftCode runSwift.
 
 The following extension methods have been implemented (with examples). The examples are also availabe via the `SPExamples` object.
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Array class extension: `asSwiftArray`
+#### ◼︎ Array class extension: `asSwiftArray`
 
 Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
@@ -150,7 +149,7 @@ Returns a string representation of a Swift object. Currently only handles one de
 "Returns '[1,"A",2,true,3,false]'"
 ```
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Boolean class extension: `asSwiftBoolean`
+#### ◼︎ Boolean class extension: `asSwiftBoolean`
 
 Returns a string representation of a Swift object.
 
@@ -159,7 +158,7 @@ true asSwiftBoolean.
 "Returns 'true'"
 ```
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) Dictionary class extension: `asSwiftDictionary`
+#### ◼︎ Dictionary class extension: `asSwiftDictionary`
 
 Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
@@ -168,7 +167,7 @@ Returns a string representation of a Swift object. Currently only handles one de
 "Returns '[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'"
 ```
 
-#### ![](https://files.pharo.org/media/logo/icon-lighthouse-16x16.ico) String class extension: `asSwiftString`
+#### ◼︎ String class extension: `asSwiftString`
 
 Returns a string representation of a Swift object.
 
@@ -177,15 +176,15 @@ Returns a string representation of a Swift object.
 "Returns '"Hello, World!"'"
 ```
 
-### Swift Response String to Pharo Object Deserialization
+### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
 **(TODO)**
 
-### Imports
+### IMPORTS
 
 The Apple [Foundation](https://developer.apple.com/documentation/foundation) framework is imported into Swift code automatically. To use other Apple frameworks with Swift code, use the Swift `import` directive as needed.
 
-### Asynchronous Swift Code
+### ASYNCHRONOUS SWIFT CODE
 
 To prevent asynchronous Swift code from exiting too early, use the Swift [dispatchMain()](https://developer.apple.com/documentation/dispatch/1452860-dispatchmain) function to never return and use the Swift [exit()](https://developer.apple.com/documentation/foundation/thread/1409404-exit) function to exit where appropriate.
 
@@ -224,7 +223,7 @@ dispatchMain() // Prevent premature exit
 
 ## Acknowledgements
 
-This project makes use of the following third-party libraries:
+This project makes use of the following third-party library:
 
 * [OSSubprocess](https://github.com/pharo-contributions/OSSubprocess)
 
