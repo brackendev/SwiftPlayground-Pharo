@@ -119,7 +119,7 @@ swiftArray := #(1 2 3 4 5) asSwiftArray.
 
 Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code.
 
-### Pharo Object to Swift String Serialization
+### PHARO OBJECT TO SWIFT STRING SERIALIZATION
 
 Pharo class extension methods can be used as quick helpers to serialize Pharo objects to Swift psuedo-objects (string representations of Swift objects). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
 
