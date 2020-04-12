@@ -13,8 +13,8 @@ SwiftPlayground-Pharo
 
 Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect output and Swift [ASTs](https://en.wikipedia.org/wiki/Abstract_syntax_tree).
 
-* [Pharo 7.0](https://www.pharo.org/) reference platform.
-* Requires macOS 10.14.5 (or later) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit).
+* [Pharo 8.0](https://www.pharo.org/) reference platform.
+* Requires macOS (tested with 10.15.4) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit) ***and*** the Swift tools (see _Installation_).
   
 ![](images/screenshot2.png)
 
@@ -36,7 +36,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 ## Installation
 
 1. Install and setup the Swift tools for your environment:
-    * **macOS:** Install the [Command Line Tools (macOS 10.14) for Xcode 10.2.1](https://developer.apple.com/download/more/?=command%20line%20tools) (or later).
+    * **macOS:** Install the [Command Line Tools for Xcode](https://developer.apple.com/download/more/?=command%20line%20tools).
     * **GNU/Linux:** [Install Swift](https://www.swift.org/getting-started/#installing-swift) from [swift.org](https://www.swift.org/).
 2. In a Playground, evaluate:
 
