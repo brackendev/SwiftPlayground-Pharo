@@ -1,4 +1,4 @@
 examples
 exampleAsSwiftBoolean
 	<sampleInstance>
-	^ true asSwiftBoolean
+	^ true asSwiftBoolean 
