@@ -40,7 +40,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 1. Install and setup the Swift tools for your environment:
     * **macOS:** Install the [Command Line Tools for Xcode](https://developer.apple.com/download/more/?=command%20line%20tools).
     * **GNU/Linux:** [Install Swift](https://www.swift.org/getting-started/#installing-swift) from [swift.org](https://www.swift.org/).
-2. In a Playground, evaluate:
+2. In a Playground, _Do it_:
 
     ```smalltalk
     Metacello new
@@ -216,9 +216,9 @@ dispatchMain() // Prevent premature exit
 
 ## TODO
 
-- [ ] Swift Playground `Print it`
-- [ ] Swift Playground syntax highlighting and code completion
-- [ ] Swift Playground open/save files
+- [ ] Swift Playground: `Print it`
+- [ ] Swift Playground: Syntax highlighting and code completion
+- [ ] Swift Playground: Open/save files
 - [ ] Swift response string to Pharo object deserialization
 - [ ] Move documentation to the wiki
 - [ ] Move to [Spec2](https://astares.blogspot.com/2019/08/spec2.html)
@@ -236,3 +236,12 @@ This project makes use of the following third-party library:
 ## License
 
 SwiftPlayground-Pharo is released under the MIT license. See the LICENSE file for more info.
+
+- - -
+
+## Useful Links
+
+* [/r/smalltalk](https://www.reddit.com/r/smalltalk/) [Reddit]
+* [@pharoproject](https://twitter.com/pharoproject) [Twitter]
+* [forum.world.st](http://forum.world.st/)
+* [pharo.org](http://www.pharo.org/)
