@@ -1,4 +1,4 @@
 examples
 exampleOpenPlayground
 	<sampleInstance>
-	SwiftPlayground openPlayground
+	self openPlayground
