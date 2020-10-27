@@ -237,6 +237,8 @@ This project makes use of the following third-party library:
 
 SwiftPlayground-Pharo is released under the MIT license. See the LICENSE file for more info.
 
+- - -
+
 ## Useful Links
 
 * [@pharoproject](https://twitter.com/pharoproject) [Twitter]
