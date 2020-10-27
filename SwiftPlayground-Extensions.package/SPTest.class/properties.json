@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SPTests",
+	"name" : "SPTest",
 	"type" : "normal"
 }
