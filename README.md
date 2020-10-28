@@ -191,11 +191,11 @@ returns `'"Hello, World!"'`.
 
 ### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
-Pharo string class extension methods can be used as quick helpers to deserialize Swift code (as Pharo strings) to better Pharo objects. These are useful to more easily handling Swift code ouput. For example, `'true' asPharoBoolean` returns `true`.
+Pharo extension methods can be used as quick helpers to deserialize Swift code (as Pharo strings) to better Pharo objects. These are useful to more easily handling Swift code ouput. For example, `'true' asPharoBoolean` returns `true`.
 
-Currently, the following string class extension methods have been implemented. The examples are also availabe via the `SPExamples` object.
+Currently, the following extension methods have been implemented. The examples are also availabe via the `SPExamples` object.
 
-#### ◼︎ Boolean class extension: `asPharoBoolean`
+#### ◼︎ String class extension: `asPharoBoolean`
 
 Example:
 
