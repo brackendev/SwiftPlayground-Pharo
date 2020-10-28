@@ -126,7 +126,7 @@ Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of S
 
 ### PHARO OBJECT TO SWIFT STRING SERIALIZATION
 
-Pharo class extension methods can be used as quick helpers to serialize Pharo objects to Swift psuedo-objects (Pharo strings representing Swift objects). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
+Pharo class extension methods can be used as quick helpers to serialize Pharo objects to Swift code (as Pharo strings). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
 
 These are useful in concatenating Pharo strings of Swift code. For example, in the code below, notice the usage of `sentence` and `asSwiftString` and how they're used in the `swiftCode` string concatenation:
 
@@ -191,7 +191,19 @@ returns `'"Hello, World!"'`.
 
 ### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
-**(TODO)**
+Pharo string class extension methods can be used as quick helpers to deserialize Swift code (as Pharo strings) to better Pharo objects. These are useful to more easily handling Swift code ouput. For example, `'true' asPharoBoolean` returns `true`.
+
+Currently, the following string class extension methods have been implemented. The examples are also availabe via the `SPExamples` object.
+
+#### ◼︎ Boolean class extension: `asPharoBoolean`
+
+Example:
+
+```smalltalk
+'1 == 1' runSwift asPharoBoolean.
+```
+
+returns `true`.
 
 ### IMPORTS
 
