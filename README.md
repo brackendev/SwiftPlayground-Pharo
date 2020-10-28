@@ -103,13 +103,22 @@ swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
 print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 ```
 
-returns Pharo String `true`.
+_returns_ `true`
 
 Tip: Simple Swift code does not require Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
 
-`'Array("ABCDE")' runSwift.` returns Pharo String `["A", "B", "C", "D", "E"]`.
+```smalltalk
+'Array("ABCDE")' runSwift.
+```
 
-`swiftArray := #(1 2 3 4 5) asSwiftArray. (swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.` returns Pharo String `55`.
+_returns_ `'["A", "B", "C", "D", "E"]'`
+
+```smalltalk
+swiftArray := #(1 2 3 4 5) asSwiftArray.
+(swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
+```
+
+_returns_ `'55'`
 
 #### ◼︎ String class extension: `swiftAST`
 
@@ -133,33 +142,50 @@ print(!alphabet.contains {
 swiftCode runSwift.
 ```
 
-returns Pharo String `true`.
+_returns_ `'true'`
 
 The following extension methods have been implemented (with examples). The examples are also availabe via the `SPExamples` object.
 
 #### ◼︎ Array class extension: `asSwiftArray`
 
-Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
+Returns a Pharo string representing a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
-`#(1 'A' 2 true 3 false) asSwiftArray.` returns `[1,"A",2,true,3,false]`.
+```smalltalk
+#(1 'A' 2 true 3 false) asSwiftArray.
+```
+
+_returns_ `'[1,"A",2,true,3,false]'`
 
 #### ◼︎ Boolean class extension: `asSwiftBoolean`
 
-Returns a string representation of a Swift object.
+Returns a Pharo string representing a Swift object.
 
-`true asSwiftBoolean.` returns Pharo String `true`.
+```smalltalk
+true asSwiftBoolean.
+```
+
+_returns_ `'true'`
 
 #### ◼︎ Dictionary class extension: `asSwiftDictionary`
 
-Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
+Returns a Pharo string representing a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
-`(Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true). (false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.` returns Pharo String `[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]`.
+```smalltalk
+(Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true).
+(false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.
+```
+
+_returns_ `'[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'`
 
 #### ◼︎ String class extension: `asSwiftString`
 
-Returns a string representation of a Swift object.
+Returns a Pharo string representing a Swift object.
 
-`'Hello, World!' asSwiftString.` returns Pharo String `"Hello, World!"`.
+```smalltalk
+'Hello, World!' asSwiftString.
+```
+
+_returns_ `'"Hello, World!"'`
 
 ### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
