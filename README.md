@@ -126,12 +126,13 @@ Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of S
 
 ### PHARO OBJECT TO SWIFT STRING SERIALIZATION
 
-Pharo class extension methods can be used as quick helpers to serialize Pharo objects to Swift psuedo-objects (string representations of Swift objects). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
+Pharo class extension methods can be used as quick helpers to serialize Pharo objects to Swift psuedo-objects (Pharo strings representing Swift objects). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
 
-In the code below, notice the usage of `sentence`, `asSwiftString`, and the `swiftCode` string concatenation:
+These are useful in concatenating Pharo strings of Swift code. For example, in the code below, notice the usage of `sentence` and `asSwiftString` and how they're used in the `swiftCode` string concatenation:
 
 ```smalltalk
 sentence := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
+
 swiftCode := ('
 // Determine a pangram
 let (sentenceSet, alphabet) = (Set(', sentence, '), "abcdefghijklmnopqrstuvwxyz")
@@ -139,16 +140,17 @@ print(!alphabet.contains {
   !sentenceSet.contains($0)
 })
 ').
+
 swiftCode runSwift.
 ```
 
 _returns_ `'true'`
 
-The following extension methods have been implemented (with examples). The examples are also availabe via the `SPExamples` object.
+Currently, the following extension methods have been implemented. The examples are also availabe via the `SPExamples` object.
 
 #### ◼︎ Array class extension: `asSwiftArray`
 
-Returns a Pharo string representing a Swift object. Currently only handles one depth of booleans, numbers, and strings.
+Currently only handles one depth of booleans, numbers, and strings.
 
 ```smalltalk
 #(1 'A' 2 true 3 false) asSwiftArray.
@@ -158,8 +160,6 @@ _returns_ `'[1,"A",2,true,3,false]'`
 
 #### ◼︎ Boolean class extension: `asSwiftBoolean`
 
-Returns a Pharo string representing a Swift object.
-
 ```smalltalk
 true asSwiftBoolean.
 ```
@@ -168,7 +168,7 @@ _returns_ `'true'`
 
 #### ◼︎ Dictionary class extension: `asSwiftDictionary`
 
-Returns a Pharo string representing a Swift object. Currently only handles one depth of booleans, numbers, and strings.
+Currently only handles one depth of booleans, numbers, and strings.
 
 ```smalltalk
 (Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true).
@@ -178,8 +178,6 @@ Returns a Pharo string representing a Swift object. Currently only handles one d
 _returns_ `'[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'`
 
 #### ◼︎ String class extension: `asSwiftString`
-
-Returns a Pharo string representing a Swift object.
 
 ```smalltalk
 'Hello, World!' asSwiftString.
@@ -193,7 +191,7 @@ _returns_ `'"Hello, World!"'`
 
 ### IMPORTS
 
-The Apple [Foundation](https://developer.apple.com/documentation/foundation) framework is imported into Swift code automatically. To use other Apple frameworks with Swift code, use the Swift `import` directive as needed.
+The Apple [Foundation](https://developer.apple.com/documentation/foundation) framework is imported into Swift code automatically. To use other Apple frameworks with Swift code, use the Swift `import` directive.
 
 ### ASYNCHRONOUS SWIFT CODE
 
