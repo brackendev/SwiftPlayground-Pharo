@@ -111,14 +111,14 @@ Tip: Simple Swift code does not need the [print](https://developer.apple.com/doc
 'Array("ABCDE")' runSwift.
 ```
 
-_returns_ `'["A", "B", "C", "D", "E"]'`
+returns `'["A", "B", "C", "D", "E"]'`. And:
 
 ```smalltalk
 swiftArray := #(1 2 3 4 5) asSwiftArray.
 (swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
 ```
 
-_returns_ `'55'`
+returns `'55'`.
 
 #### ◼︎ String class extension: `swiftAST`
 
@@ -144,46 +144,50 @@ print(!alphabet.contains {
 swiftCode runSwift.
 ```
 
-_returns_ `'true'`
+returns `'true'`.
 
 Currently, the following extension methods have been implemented. The examples are also availabe via the `SPExamples` object.
 
 #### ◼︎ Array class extension: `asSwiftArray`
 
-Currently only handles one depth of booleans, numbers, and strings.
+Currently only handles one depth of booleans, numbers, and strings. Example:
 
 ```smalltalk
 #(1 'A' 2 true 3 false) asSwiftArray.
 ```
 
-_returns_ `'[1,"A",2,true,3,false]'`
+returns `'[1,"A",2,true,3,false]'`.
 
 #### ◼︎ Boolean class extension: `asSwiftBoolean`
+
+Example:
 
 ```smalltalk
 true asSwiftBoolean.
 ```
 
-_returns_ `'true'`
+returns `'true'`.
 
 #### ◼︎ Dictionary class extension: `asSwiftDictionary`
 
-Currently only handles one depth of booleans, numbers, and strings.
+Currently only handles one depth of booleans, numbers, and strings. Example:
 
 ```smalltalk
 (Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true).
 (false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.
 ```
 
-_returns_ `'[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'`
+returns `'[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'`.
 
 #### ◼︎ String class extension: `asSwiftString`
+
+Example:
 
 ```smalltalk
 'Hello, World!' asSwiftString.
 ```
 
-_returns_ `'"Hello, World!"'`
+returns `'"Hello, World!"'`.
 
 ### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
