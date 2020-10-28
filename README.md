@@ -101,21 +101,24 @@ Returns a string representation of a Swift object from Swift code. Use Swift's [
 swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
 ('let (lowercased, alphabet) = (Set(', swiftString, '), "abcdefghijklmnopqrstuvwxyz")
 print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
-"Returns 'true'"
 ```
+
+...returns `true`.
 
 Tip: Simple Swift code does not require Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
 
 ```smalltalk
 'Array("ABCDE")' runSwift.
-"Returns '["A", "B", "C", "D", "E"]'"
 ```
+
+...returns `["A", "B", "C", "D", "E"]`.
 
 ```smalltalk
 swiftArray := #(1 2 3 4 5) asSwiftArray.
 (swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
-"Returns '55'"
 ```
+
+...returns `55`.
 
 #### ◼︎ String class extension: `swiftAST`
 
@@ -137,8 +140,9 @@ print(!alphabet.contains {
 })
 ').
 swiftCode runSwift.
-"Returns 'true'"
 ```
+
+...returns `true`.
 
 The following extension methods have been implemented (with examples). The examples are also availabe via the `SPExamples` object.
 
@@ -148,8 +152,9 @@ Returns a string representation of a Swift object. Currently only handles one de
 
 ```smalltalk
 #(1 'A' 2 true 3 false) asSwiftArray.
-"Returns '[1,"A",2,true,3,false]'"
 ```
+
+...returns `[1,"A",2,true,3,false]`.
 
 #### ◼︎ Boolean class extension: `asSwiftBoolean`
 
@@ -157,8 +162,9 @@ Returns a string representation of a Swift object.
 
 ```smalltalk
 true asSwiftBoolean.
-"Returns 'true'"
 ```
+
+...returns `true`.
 
 #### ◼︎ Dictionary class extension: `asSwiftDictionary`
 
@@ -166,8 +172,9 @@ Returns a string representation of a Swift object. Currently only handles one de
 
 ```smalltalk
 (Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true). (false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.
-"Returns '[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]'"
 ```
+
+...returns `[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]`.
 
 #### ◼︎ String class extension: `asSwiftString`
 
@@ -175,8 +182,9 @@ Returns a string representation of a Swift object.
 
 ```smalltalk
 'Hello, World!' asSwiftString.
-"Returns '"Hello, World!"'"
 ```
+
+...returns `"Hello, World!"`.
 
 ### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
