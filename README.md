@@ -4,7 +4,7 @@
 
 <p style="text-align: center;"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Never ever praise an Xcode playground. It’s bound to crash 10 seconds later. #Swift #xcode #ios</p>&mdash; YOAD (@YOADAPPS) <a href="https://twitter.com/YOADAPPS/status/1075868207641231360?ref_src=twsrc%5Etfw">December 20, 2018</a></blockquote></p>
 
-Because of Xcode [Swift](https://news.ycombinator.com/item?id=24473055) Playground [instability](https://twitter.com/search?q=xcode%20playground%20crash&f=live) while running even the [simplest](https://twitter.com/bioalex/status/1177368049873301506) of [Swift](https://news.ycombinator.com/item?id=24593628) code, this Swift code runner was implemented with Pharo. It brings the benefits of greatly increased stability for trying short pieces of code _and_  working with Swift output in the powerful Pharo live development environment.
+Because of Xcode [Swift](https://news.ycombinator.com/item?id=24473055) Playground [instability](https://twitter.com/search?q=xcode%20playground%20crash&f=live) while running even the [simplest](https://twitter.com/bioalex/status/1177368049873301506) of [Swift](https://news.ycombinator.com/item?id=24593628) code, this Swift code runner was implemented with Pharo. It brings the benefits of greatly increased stability for trying short pieces of Swift code _and_  working with that output in the stable, powerful Pharo live, modern development environment.
 
 - - -
 
