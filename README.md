@@ -103,22 +103,13 @@ swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
 print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 ```
 
-...returns `true`.
+returns Pharo String `true`.
 
 Tip: Simple Swift code does not require Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
 
-```smalltalk
-'Array("ABCDE")' runSwift.
-```
+`'Array("ABCDE")' runSwift.` returns Pharo String `["A", "B", "C", "D", "E"]`.
 
-...returns `["A", "B", "C", "D", "E"]`.
-
-```smalltalk
-swiftArray := #(1 2 3 4 5) asSwiftArray.
-(swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.
-```
-
-...returns `55`.
+`swiftArray := #(1 2 3 4 5) asSwiftArray. (swiftArray, '.map{$0 * $0}.reduce(0, +)') runSwift.` returns Pharo String `55`.
 
 #### ◼︎ String class extension: `swiftAST`
 
@@ -142,7 +133,7 @@ print(!alphabet.contains {
 swiftCode runSwift.
 ```
 
-...returns `true`.
+returns Pharo String `true`.
 
 The following extension methods have been implemented (with examples). The examples are also availabe via the `SPExamples` object.
 
@@ -150,41 +141,25 @@ The following extension methods have been implemented (with examples). The examp
 
 Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
-```smalltalk
-#(1 'A' 2 true 3 false) asSwiftArray.
-```
-
-...returns `[1,"A",2,true,3,false]`.
+`#(1 'A' 2 true 3 false) asSwiftArray.` returns `[1,"A",2,true,3,false]`.
 
 #### ◼︎ Boolean class extension: `asSwiftBoolean`
 
 Returns a string representation of a Swift object.
 
-```smalltalk
-true asSwiftBoolean.
-```
-
-...returns `true`.
+`true asSwiftBoolean.` returns Pharo String `true`.
 
 #### ◼︎ Dictionary class extension: `asSwiftDictionary`
 
 Returns a string representation of a Swift object. Currently only handles one depth of booleans, numbers, and strings.
 
-```smalltalk
-(Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true). (false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.
-```
-
-...returns `[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]`.
+`(Dictionary newFrom: {(1 -> 2). ('A' -> 3). (4 -> 'B'). (5 -> true). (false -> 'C'). ('D' -> 'E')})  asSwiftDictionary.` returns Pharo String `[1:2,"A":3,4:"B",5:true,"D":"E",false:"C"]`.
 
 #### ◼︎ String class extension: `asSwiftString`
 
 Returns a string representation of a Swift object.
 
-```smalltalk
-'Hello, World!' asSwiftString.
-```
-
-...returns `"Hello, World!"`.
+`'Hello, World!' asSwiftString.` returns Pharo String `"Hello, World!"`.
 
 ### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
