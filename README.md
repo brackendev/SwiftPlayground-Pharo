@@ -111,7 +111,7 @@ Tip: Simple Swift code does not need the [print](https://developer.apple.com/doc
 'Array("ABCDE")' runSwift.
 ```
 
-returns `'["A", "B", "C", "D", "E"]'`. And:
+returns `'["A", "B", "C", "D", "E"]'`, and:
 
 ```smalltalk
 swiftArray := #(1 2 3 4 5) asSwiftArray.
