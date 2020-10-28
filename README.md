@@ -95,7 +95,7 @@ Pharo class extension methods can be used to compile, run, and view the [AST](ht
 
 #### ◼︎ String class extension: `runSwift`
 
-Returns a string representation of a Swift object from Swift code. Use Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function within the Swift code for output to Pharo. For example:
+Returns Swift output as a string. Use the [print](https://developer.apple.com/documentation/swift/1541053-print) function within the Swift code to create output. For example:
 	
 ```smalltalk
 swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
@@ -103,9 +103,9 @@ swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
 print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 ```
 
-_returns_ `true`
+_returns_ `'true'`
 
-Tip: Simple Swift code does not require Swift's [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
+Tip: Simple Swift code does not need the [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
 
 ```smalltalk
 'Array("ABCDE")' runSwift.
