@@ -103,7 +103,7 @@ swiftString := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
 print("\(!alphabet.contains { !lowercased.contains($0) })")') runSwift.
 ```
 
-_returns_ `'true'`
+returns `'true'`.
 
 Tip: Simple Swift code does not need the [print](https://developer.apple.com/documentation/swift/1541053-print) function. For example:
 
