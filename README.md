@@ -205,6 +205,26 @@ Example:
 
 returns `true`.
 
+### EXAMPLE
+
+An example using `asSwiftString`, `runSwift`, and `asPharoBoolean`:
+
+```smalltalk
+sentence := 'The five boxing wizards jump quickly' asLowercase asSwiftString.
+
+swiftCode := ('
+// Determine a pangram
+let (sentenceSet, alphabet) = (Set(', sentence, '), "abcdefghijklmnopqrstuvwxyz")
+print(!alphabet.contains {
+  !sentenceSet.contains($0)
+})
+').
+
+swiftCode runSwift asPharoBoolean.
+```
+
+returns `true`.
+
 ### IMPORTS
 
 The Apple [Foundation](https://developer.apple.com/documentation/foundation) framework is imported into Swift code automatically. To use other Apple frameworks with Swift code, use the Swift `import` directive.
