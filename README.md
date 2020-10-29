@@ -270,8 +270,9 @@ dispatchMain() // Prevent premature exit
 
 ## Acknowledgements
 
-This project makes use of the following third-party library:
+This project makes use of the following third-party libraries and utilities:
 
+* [IconFactory](https://github.com/peteruhnak/IconFactory)
 * [OSSubprocess](https://github.com/pharo-contributions/OSSubprocess)
 
 ## Author
