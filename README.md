@@ -46,7 +46,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
     ```smalltalk
     Metacello new
-      repository: 'github://brackendev/SwiftPlayground-Pharo/src';
+      repository: 'github://brackendev/SwiftPlayground-Pharo:v1.0.0/src';
       baseline: 'SwiftPlayground';
       onConflict: [ :ex | ex useIncoming ];
       onUpgrade: [ :ex | ex useIncoming ];
