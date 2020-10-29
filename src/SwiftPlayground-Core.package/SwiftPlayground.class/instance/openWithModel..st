@@ -1,4 +1,0 @@
-private
-openWithModel: aMainComposablePresenterModel
-	SPMainComposablePresenter
-		openWith: aMainComposablePresenterModel

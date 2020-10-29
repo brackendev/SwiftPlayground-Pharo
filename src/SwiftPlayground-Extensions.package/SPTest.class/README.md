@@ -1,1 +1,0 @@
-I am SPTests, an object to test SwiftPlayground methods.

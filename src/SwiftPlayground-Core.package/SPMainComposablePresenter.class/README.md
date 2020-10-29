@@ -1,1 +1,0 @@
-I am SPMainComposablePresenter, the ComposablePresenterWithModel subclass object.

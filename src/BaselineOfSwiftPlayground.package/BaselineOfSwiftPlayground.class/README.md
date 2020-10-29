@@ -1,1 +1,0 @@
-BaselineOfSwiftPlayground is the BaselineOf subclass for SwiftPlayground.

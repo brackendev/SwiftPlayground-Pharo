@@ -1,1 +1,0 @@
-I am SPResources, an object to store icons for SwiftPlayground.

@@ -1,3 +1,0 @@
-*SwiftPlayground-Extensions
-asSwiftString
-	^ '"', self, '"'
