@@ -57,7 +57,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
 ## Usage
 
-### SWIFT PLAYGROUND
+### ★ SWIFT PLAYGROUND
 
 Write, compile, run, and inspect output of Swift code via the Swift Playground (accessible via the Tools menu).
 
@@ -83,7 +83,7 @@ Additionally, the contextual menu item, `Inspect AST`, returns the Swift [AST](h
           (string_literal_expr type='<null>' encoding=utf8 value="Hello, World!" builtin_initializer=**NULL** initializer=**NULL**)))))
 ```
 
-### INLINE SWIFT
+### ★ INLINE SWIFT
 
 Outside of the Swift Playground, Swift code can be executed within Pharo code by using the `runSwift` string class extension. For example:
 
