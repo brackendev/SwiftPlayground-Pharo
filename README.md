@@ -75,14 +75,14 @@ Write, compile, run, and inspect output of Swift code via the Swift Playground (
 * `Inspect AST`, returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for the selected Swift code. For example, `print("Hello, World!")` returns:
 
 	```
-(import_decl range=[Swift:1:1 - line:1:8] 'Foundation')
-  (top_level_code_decl range=[Swift:2:1 - line:2:22]
-    (brace_stmt range=[Swift:2:1 - line:2:22]
-      (call_expr type='<null>' arg_labels=_:
-        (unresolved_decl_ref_expr type='<null>' name=print function_ref=unapplied)
-        (paren_expr type='<null>'
-          (string_literal_expr type='<null>' encoding=utf8 value="Hello, World!" builtin_initializer=**NULL** initializer=**NULL**)))))
-```
+	(import_decl range=[Swift:1:1 - line:1:8] 'Foundation')
+	  (top_level_code_decl range=[Swift:2:1 - line:2:22]
+	    (brace_stmt range=[Swift:2:1 - line:2:22]
+	      (call_expr type='<null>' arg_labels=_:
+	        (unresolved_decl_ref_expr type='<null>' name=print function_ref=unapplied)
+	        (paren_expr type='<null>'
+	          (string_literal_expr type='<null>' encoding=utf8 value="Hello, World!" builtin_initializer=**NULL** initializer=**NULL**)))))
+	```
 
 ### ★ INLINE SWIFT
 
