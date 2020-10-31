@@ -69,10 +69,10 @@ Write, compile, run, and inspect output of Swift code via the Swift Playground (
 
 ##### Important contextual menu items:
 
-* `Do it` – Compile and run the selected Swift code
-* `Inspect it` – Compile and run the selected Swift code, inspect it
-* `Print it` – Compile and run the selected Swift code, print it (**TODO**)
-* `Inspect AST`, returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for the selected Swift code. For example, `print("Hello, World!")` returns:
+* `Do it` – Run the selected Swift code
+* `Inspect it` – Run the selected Swift code and inspect it
+* `Print it` – Run the selected Swift code and print it (**TODO**)
+* `Inspect AST` – Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for the selected Swift code. For example, `print("Hello, World!")` returns:
 
 	```
 	(import_decl range=[Swift:1:1 - line:1:8] 'Foundation')
