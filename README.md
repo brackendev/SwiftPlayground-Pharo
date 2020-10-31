@@ -57,6 +57,8 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
 ## Usage
 
+Swift code can be run in the Swift Playground and inline within Pharo code.
+
 ### ★ SWIFT PLAYGROUND
 
 Write, compile, run, and inspect output of Swift code via the Swift Playground (accessible via the Tools menu).
@@ -70,10 +72,9 @@ Write, compile, run, and inspect output of Swift code via the Swift Playground (
 * `Do it` – Compile and run the selected Swift code
 * `Inspect it` – Compile and run the selected Swift code, inspect it
 * `Print it` – Compile and run the selected Swift code, print it (**TODO**)
+* `Inspect AST`, returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for the selected Swift code. For example, `print("Hello, World!")` returns:
 
-Additionally, the contextual menu item, `Inspect AST`, returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) for the selected Swift code. For example, `print("Hello, World!")` returns:
-
-```
+	```
 (import_decl range=[Swift:1:1 - line:1:8] 'Foundation')
   (top_level_code_decl range=[Swift:2:1 - line:2:22]
     (brace_stmt range=[Swift:2:1 - line:2:22]
@@ -93,7 +94,7 @@ Outside of the Swift Playground, Swift code can be executed within Pharo code by
 
 ### SWIFT OUTPUT AND ABSTRACT SYNTAX TREES
 
-Pharo class extension methods can be used to compile, run, and view the [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code.
+Pharo class extensions can be used to run and view the [ASTs](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of Swift code with the `runSwift` and `swiftAST` class extensions:
 
 #### ◼︎ String class extension: `runSwift`
 
@@ -128,7 +129,7 @@ Returns the Swift [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) of S
 
 ### PHARO OBJECT TO SWIFT STRING SERIALIZATION
 
-Pharo class extension methods can be used as quick helpers to serialize Pharo objects to Swift code (as Pharo strings). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
+Pharo class extensions can be used as quick helpers to serialize Pharo objects to Swift code (as Pharo strings). For example, `'Hello, World!' asSwiftString` returns `'"Hello, World!"'`.
 
 These are useful in concatenating Pharo strings of Swift code. For example, in the code below, notice the usage of `sentence` and `asSwiftString` and how they're used in the `swiftCode` string concatenation:
 
@@ -148,7 +149,7 @@ swiftCode runSwift.
 
 returns `'true'`.
 
-Currently, the following extension methods have been implemented. The examples are also availabe via the `SPExamples` object.
+Currently, the following class extensions have been implemented. The examples are also availabe via the `SPExamples` object.
 
 #### ◼︎ Array class extension: `asSwiftArray`
 
@@ -193,7 +194,7 @@ returns `'"Hello, World!"'`.
 
 ### SWIFT RESPONSE STRING TO PHARO OBJECT DESERIALIZATION
 
-Pharo extension methods can be used as quick helpers to deserialize Swift code (as Pharo strings) to better Pharo objects. These are useful to more easily handling Swift code ouput. For example, `'true' asPharoBoolean` returns `true`.
+Pharo class extensions can be used as quick helpers to deserialize Swift code (as Pharo strings) to better Pharo objects. These are useful to more easily handling Swift code ouput. For example, `'true' asPharoBoolean` returns `true`.
 
 Currently, the following extension methods have been implemented. The examples are also availabe via the `SPExamples` object.
 
@@ -207,7 +208,7 @@ Example:
 
 returns `true`.
 
-### EXAMPLE
+### 👉🏻 EXAMPLE
 
 An example using `asSwiftString`, `runSwift`, and `asPharoBoolean`:
 
@@ -226,6 +227,8 @@ swiftCode runSwift asPharoBoolean.
 ```
 
 returns `true`.
+
+## TIPS
 
 ### IMPORTS
 
