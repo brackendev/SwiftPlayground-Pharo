@@ -4,7 +4,7 @@ BaselineOfSwiftPlayground is the BaselineOf subclass for SwiftPlayground.
 Class {
 	#name : #BaselineOfSwiftPlayground,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfSwiftPlayground'
+	#category : #BaselineOfSwiftPlayground
 }
 
 { #category : #baselines }
@@ -30,5 +30,5 @@ BaselineOfSwiftPlayground >> baseline: spec [
 BaselineOfSwiftPlayground >> setupDependencies: spec [
 	spec
 		baseline: 'OSSubprocess'
-		with: [ spec repository: 'github://pharo-contributions/OSSubprocess:v1.2.2/repository' ]
+		with: [ spec repository: 'github://pharo-contributions/OSSubprocess:v1.3.0/repository' ]
 ]
