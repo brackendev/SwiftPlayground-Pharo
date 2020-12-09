@@ -17,7 +17,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
 * [Pharo 8.0](https://www.pharo.org/) reference platform.
 * Requires:
-   * macOS (tested with 10.15.7) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit).
+   * macOS (tested with 11.0.1) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit).
    * Swift tools (see _Installation_ below).
   
 ![](images/screenshot2.png)
@@ -46,7 +46,7 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
     ```smalltalk
     Metacello new
-      repository: 'github://brackendev/SwiftPlayground-Pharo:v1.0.0/src';
+      repository: 'github://brackendev/SwiftPlayground-Pharo:v1.0.1/src';
       baseline: 'SwiftPlayground';
       onConflict: [ :ex | ex useIncoming ];
       onUpgrade: [ :ex | ex useIncoming ];
