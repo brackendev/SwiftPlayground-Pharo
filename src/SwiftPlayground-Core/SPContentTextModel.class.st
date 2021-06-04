@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'owner'
 	],
-	#category : 'SwiftPlayground-Core-SwiftPlayground-Core'
+	#category : 'SwiftPlayground-Core'
 }
 
 { #category : #menu }
