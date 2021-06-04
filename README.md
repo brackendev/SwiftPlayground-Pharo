@@ -46,12 +46,11 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
 
     ```smalltalk
     Metacello new
-      repository: 'github://brackendev/SwiftPlayground-Pharo:v1.0.1/src';
+      repository: 'github://brackendev/SwiftPlayground-Pharo:v1.0.2/src';
       baseline: 'SwiftPlayground';
       onConflict: [ :ex | ex useIncoming ];
       onUpgrade: [ :ex | ex useIncoming ];
       onDowngrade: [ :ex | ex useLoaded ];
-      ignoreImage;
       load.
     ```
 
