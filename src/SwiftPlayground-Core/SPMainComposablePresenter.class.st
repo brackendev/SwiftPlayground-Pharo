@@ -10,7 +10,7 @@ Class {
 		'contentTextMorph',
 		'contentTextAdapter'
 	],
-	#category : 'SwiftPlayground-Core-SwiftPlayground-Core'
+	#category : 'SwiftPlayground-Core'
 }
 
 { #category : #specs }
