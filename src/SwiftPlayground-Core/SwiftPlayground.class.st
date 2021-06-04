@@ -7,7 +7,7 @@ Class {
 	#classInstVars : [
 		'shared'
 	],
-	#category : 'SwiftPlayground-Core-SwiftPlayground-Core'
+	#category : 'SwiftPlayground-Core'
 }
 
 { #category : #examples }
