@@ -8,7 +8,7 @@ Class {
 		'contentProcess',
 		'selectedContent'
 	],
-	#category : 'SwiftPlayground-Core-SwiftPlayground-Core'
+	#category : 'SwiftPlayground-Core'
 }
 
 { #category : #accessing }
