@@ -7,7 +7,7 @@ Class {
 	#classVars : [
 		'icons'
 	],
-	#category : 'SwiftPlayground-Core-SwiftPlayground-Core'
+	#category : 'SwiftPlayground-Core'
 }
 
 { #category : #'GT-InspectorExtensions' }
