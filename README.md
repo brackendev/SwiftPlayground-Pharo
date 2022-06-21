@@ -25,6 +25,10 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
   
 ![](images/screenshot2.png)
 
+## TODO
+
+- [ ] Support latest Pharo release
+
 ## Table of Contents
 
 * [Installation](#installation)
