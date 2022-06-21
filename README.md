@@ -23,11 +23,19 @@ Run Swift with the Pharo Swift Playground, interoperate with Pharo, inspect outp
    * macOS (tested with 11.0.1) ***or*** GNU/Linux (tested with Ubuntu 14.04, 64 bit).
    * Swift tools (see _Installation_ below).
   
+## Screenshot  
+
 ![](images/screenshot2.png)
 
 ## TODO
 
-- [ ] Support latest Pharo release
+- [ ] Swift Playground: `Print it`.
+- [ ] Swift Playground: Syntax highlighting and code completion.
+- [ ] Swift Playground: Open/save files.
+- [ ] Swift response string to Pharo object deserialization.
+- [ ] Move documentation to the wiki.
+- [ ] Support the latest Pharo release.
+- [ ] Support [Spec2](https://astares.blogspot.com/2019/08/spec2.html).
 
 ## Table of Contents
 
@@ -267,16 +275,6 @@ task.resume()
 session.finishTasksAndInvalidate()
 dispatchMain() // Prevent premature exit
 ```
-
-## TODO
-
-- [ ] Swift Playground: `Print it`
-- [ ] Swift Playground: Syntax highlighting and code completion
-- [ ] Swift Playground: Open/save files
-- [ ] Swift response string to Pharo object deserialization
-- [ ] Move documentation to the wiki
-- [ ] Move to [Spec2](https://astares.blogspot.com/2019/08/spec2.html)
-- [ ] Update for Pharo 10
 
 ## Acknowledgements
 
